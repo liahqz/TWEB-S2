@@ -1,0 +1,78 @@
+:root{
+    --cor-gradiente-1: #aa4e37;
+    --cor-gradiente-2: #b10808;
+    --cor-gradiente-3: #e2faff;
+    --cor-gradiente-4: #313c6d;
+    --cor-gradiente-5: #262b3e;
+    --cor-gradiente-4: #313c6d;
+    --cor-branca: #ffffff;
+    --cor-texto: #2A2A2A;
+    --box-shadow: 0 2px 15px rgba(110, 50, 20, 0.3); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--cor-gradiente-3), var(--cor-gradiente-4));
+}
+
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #224a60;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(54, 89, 114);
+    font-weight: 500px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+nav a:hover {
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+footer{
+    bottom: 0;
+    text-align: center; 
+    width: 100%;
+    position: fixed;
+    font-size: large;
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    color: #ffffff;
+}
+
