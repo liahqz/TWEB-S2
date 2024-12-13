@@ -1,0 +1,106 @@
+/* O asterisco é usado para se referir a TUDO do site, não somente o corpo(body) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(85, 16, 95);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.conteiner{
+    align-items: center;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteiner div {
+    max-width: 50%;
+}
+
+.imagem{
+    position: relative;
+    padding: 100px;
+}
+
+.imagem img {
+    width: 150px;
+    height: 150px;
+}
+
+footer{
+    background-color: rgb(85, 16, 95);
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+/* Sobre responsividade: */
+/* 1200px é a largura miníma para um notebook */
+/* 768px é a largura miníma para um tablet(corresponde também para maioria dos celulares) */
+/* 480px é a largura miníma para um celular(celulares mais antigos e com tela menor) */
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div nav{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto, .imagem{
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem{
+        order: 0;
+        position: static;
+    }
+
+    .imagem img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}
