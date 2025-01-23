@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+SA:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(160, 9, 9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div picture p, .conteiner-video p {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.ladybug1 {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.ladybug2{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.ladybug3 {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+div img:hover {
+    box-shadow: 10px 10px 38px -11px rgb(73, 10, 10);
+    transform: scale(1.05);
+}
+
+.conteiner-imgs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+/* Teste para mudar o p(não deu certo)
+.n1 {
+    visibility: hidden;
+}
+
+.n1::after {
+    visibility: visible;
+    content: "Ladybug";
+}
+
+.n2 {
+    visibility: hidden;
+}
+
+.n2::after {
+    visibility: visible;
+    content: "Multimouse";
+}
+
+.n3 {
+    visibility: hidden;
+}
+
+.n3::after {
+    visibility: visible;
+    content: "Lady noir";
+}
+*/
+
+.conteiner-video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    font-family: "Playwrite AU SA", serif;
+}
+
+.conteiner-video h1 {
+    margin-bottom: 20px;
+}
+
+.conteiner-video p{
+    font-family: "Playwrite AU SA", serif;
+}
+
+.video-player{
+    border-radius: 13px;
+    border: solid 10px black;
+    width: 1000px;
+}
+
+main p:active {
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    
+    header {
+        width: 480px;
+    }
+
+    .conteiner-imgs {
+        gap: 15px;
+    }
+
+    .conteiner-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .ladybug1 {
+        width: 100%;
+        height: 130px;
+    }
+
+    .ladybug2 {
+        width: 50%;
+        height: 130px;
+    }
+
+    .ladybug3 {
+        width: 100%;
+        height: 130px;
+    }
+
+    /* Teste para mudar o p(não deu certo)
+    .n1{
+        visibility: hidden;
+    }
+
+    .n1::after {
+        visibility: visible;
+        content: "Ladybug";
+    }
+
+    .n2 {
+        visibility: hidden;
+    }
+    
+    .n2::after {
+        visibility: visible;
+        content: "Multimouse";
+    }
+
+    .n3 {
+        visibility: hidden;
+    }
+    
+    .n3::after {
+        visibility: visible;
+        content: "Lady noir";
+    }
+    */
+
+    .video-player {
+        width: 350px;
+    }
+
+    footer {
+        width: 480px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        width: 768px;
+    }
+
+    .conteiner-imgs {
+        gap: 15px;
+    }
+
+    .conteiner-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .ladybug3{
+        width: 100%;
+        height: 290px;
+    }
+
+    /* Teste para mudar o p(não deu certo)
+    .n1{
+        visibility: hidden;
+    }
+
+    .n1::after {
+        visibility: visible;
+        content: "Aquabug";
+    }
+
+    .n2 {
+        visibility: hidden;
+    }
+    
+    .n2::after {
+        visibility: visible;
+        content: "Icebug";
+    }
+
+    .n3 {
+        visibility: hidden;
+    }
+    
+    .n3::after {
+        visibility: visible;
+        content: "Icebug";
+    }
+    */
+
+    .video-player {
+        width: 550px;
+    }
+
+    footer {
+        width: 768px;
+    }
+
+}
+
+@media (max-width: 978px) {
+
+    header {
+        width: 768px;
+    }
+
+    .conteiner-imgs {
+        gap: 15px;
+    }
+
+    .conteiner-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .ladybug3{
+        width: 100%;
+        height: 301px;
+    }
+
+    /* Teste para mudar o p(não deu certo)
+    .n1{
+        visibility: hidden;
+    }
+
+    .n1::after {
+        visibility: visible;
+        content: "BugNoire";
+    }
+
+    .n2 {
+        visibility: hidden;
+    }
+    
+    .n2::after {
+        visibility: visible;
+        content: "Cosmobug";
+    }
+
+    .n3 {
+        visibility: hidden;
+    }
+    
+    .n3::after {
+        visibility: visible;
+        content: "Penny bug";
+    }
+    */
+
+    .video-player {
+        width: 550px;
+    }
+
+    footer {
+        width: 768px;
+    }
+
+}
