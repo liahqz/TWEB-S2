@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&display=swap');
+main{
+    width: 31%;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2{
+    display: flex;
+    align-items: center;
+    color: rgb(36, 16, 122);
+    font-family: "Bona Nova SC", serif;
+}
+
+.form{
+    border: 5px solid rgb(90, 112, 255);
+    max-width: 30%;
+    margin: auto; 
+    padding: 10px;
+    background-color:rgb(11, 41, 133);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+label{
+    width: 30%;
+    font-family: "Bona Nova SC", serif;
+}
+    
+input[type="text"], 
+input[type="email"],
+input[type="mensagem"],
+select,
+textarea{
+    width: 95%;
+    padding: 5px;
+    margin: 5px 15px 10px;
+    justify-content: left;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid rgb(90, 112, 255);
+}
+
+.ft{
+    display: flex;
+    justify-content: center;
+}
+
+.foto{
+    width: 200px;
+}
+    
+button{
+    background: rgb(156, 10, 10);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    font-family: "Bona Nova SC", serif;
+}
+
+form button::after {
+    bottom: 10px;
+    left: 10px;
+    width: 10px;
+    height: 2px;
+   
+    transition: width 0.3s ease;
+}
+
+form button:hover::after{
+    width: 100%;
+}
+
+form button:hover{
+    background: black;
+    color: blue;
+    transform: scale(1.1);
+    transition: all 0.8s ease;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat", serif;
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    background: rgb(62, 60, 142);
+    color: #ffffff;
+}
+
+@media (max-width: 720px){
+    form{
+        width: 200px;
+    }
+}

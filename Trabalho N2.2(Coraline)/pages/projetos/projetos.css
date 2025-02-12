@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.projetos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.fotos {
+    width: 400px;
+    height: 600px;
+    transition: all 0.3s ease;
+}
+
+.fotos:hover {
+    transform: scale(1.05);
+}
+
+.projetos h2{
+    margin-left: 5px;
+    max-width: 80%;
+    font-family: "Exo 2", serif;
+}
+
+.projetos h3{
+    margin-left: 5px;
+}
+
+h3{
+    text-decoration: none;
+    font-family: "Righteous", serif;
+    color: black;
+}
+
+strong {
+    text-decoration: underline;
+    color: rgb(126, 10, 10);
+}
+
+@media (max-width: 720px){
+    .projetos img{
+        width: 150px;
+        height: 250px;
+    }
+
+}
