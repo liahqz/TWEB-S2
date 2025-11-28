@@ -1,0 +1,5 @@
+@import url('global.css');
+@import url('./components/header.css');
+@import url('./components/textp.css');
+@import url('./components/photos.css');
+@import url('./components/footer.css');

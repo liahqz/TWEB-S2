@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-neon: #886b53;
+    --cor-gradiente-1: #88714e;
+    --cor-gradiente-2: #5a3300;
+    --cor-branca: #ffffff;
+    --cor-texto: #2A2A2A;
+    --box-shadow: 0 2px 15px rgba(104, 47, 0, 0.3); 
+}

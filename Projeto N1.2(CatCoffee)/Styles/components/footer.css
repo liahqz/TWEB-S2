@@ -1,0 +1,13 @@
+footer{
+    text-align: center; 
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: var(--box-shadow);
+}

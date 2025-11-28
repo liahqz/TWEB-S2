@@ -1,0 +1,31 @@
+.photos {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 200px;
+}
+
+
+.gato {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
+   
+}
+
+aside div img {
+    transition: all 0.8s ease;
+
+}
+
+aside div img:hover {
+    transform: scale(1.2);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
